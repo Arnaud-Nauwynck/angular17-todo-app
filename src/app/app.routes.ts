@@ -1,8 +1,10 @@
 import { Routes } from '@angular/router';
-import {Comp1Component} from "./comp1/comp1.component";
-import {Comp2Component} from "./comp2/comp2.component";
+import {TodoListComponent} from "./todo-list/todo-list.component";
+import {TodoDetailComponent} from "./todo-detail/todo-detail.component";
+import {TodoNewComponent} from "./todo-new/todo-new.component";
 
 export const routes: Routes = [
-  { path:'comp1', component: Comp1Component},
-  { path:'comp2', component: Comp2Component},
+  {path:'list', component: TodoListComponent},
+  {path:'new', component: TodoNewComponent},
+  {path:'todo-detail/:id', component: TodoDetailComponent}
 ];
